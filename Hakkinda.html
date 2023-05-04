@@ -2,34 +2,145 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
+
     <title>Ayşe Aktaş</title>
 </head>
 
 <body>
     <!-- Menü Başlangıç -->
-    
-    <div class="container">
-        <div class="navbar">
-            <div class="baslik">
-                <a href="#">Ayşe Aktaş</a>
-            </div>
-            <ul>
-                <li><a href="#" class="active">Anasayfa</a></li>
-                <li><a href="Sehrim.html">Şehrim</a></li>
-                <li><a href="Ozgecmis.html">Şehrim</a></li>
-                <li><a href="Mirasimiz.html">Mirasımız</a></li>
-                <li><a href="IlgiAlanlarim.html">İlgi Alanlarım</a></li>
-                <li><a href="Iletisim.html" target="_blank">İletişim</a></li>
-            </ul>
-        </div>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Ayşe Aktaş Web Proje</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Anasayfa</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="Ozgecmis.html">Özgeçmiş</a>
+                    </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link" href="IlgiAlanlarim.html">İlgi Alanlarım</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="Sehrim.html">Şehrim</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Mirasimiz.html">Mirasımız</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="Iletisim.html" target="_blank">İletişim</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!-- Menü Bitiş -->
 
+    <!-- SLİDER    Kayan Resimler Başlangıç    SLİDER-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/Anasayfa/1.jpg" class="d-block w-100 resimSlider" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Ayşe Aktaş</h5>
+                    <p></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/Anasayfa/2.jpg" class="d-block w-100 resimSlider" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Şehrim</h5>
+                    <p>Konya</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/Anasayfa/3.jpg" class="d-block w-100 resimSlider" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Takımım</h5>
+                    <p>Galatasaray</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- SLİDER    Kayan Resimler Bitiş    SLİDER-->
+    <!-- Hakkımızda Başlangıç-->
+    <section class="hakkinda">
+        <div class="div1">
+            <h2 class="hakkindabaslik">HAKKIMDA</h2>
+            <hr class="ayse">
+
+            <p> Ben Ayşe Aktaş.18 Mart 2004 tarihinde Konya/Ereğli ‘de dünyaya gözlerimi açtım.Aile bireylerim annem ,
+                babam,ablam ve abimden oluşuyor. Anne ev hanımı, babam emekli, ablam doktor, abim elektrik elektronik
+                mühendisidir.
+                Ben yaşantımın çoğunu Ereğli’de geçirdim.Ben ve kardeşlerim arasında 11 yaş var.
+                Bundan dolayı ben küçükken onlar üniversitedelerdi ve ben genel olarak tek çocuk gibi büyüdüm.
+                Küçüklüğümde maalesef çok yaramazdım ve yaramazlıklarımın anısı olarak 7 dikişim var. </p>
+
+            <p>Eğitim hayatım Atatürk İlkokulu ile başladı.
+                Ortaokulu Feriha ve Ferhat Koyuncuoğlu Ortaokulu’nda okudum.
+                Lise hayatımın 3.5 yılı Cumhuriyet Anadolu lisesinde kalan yarım yılı Açık Öğretim lisesinde okuyarak
+                tamamladım.
+                Lise öğrenimimin yarım dönemini üniversite sınavı zamanı okuldan az verim alamam sebebiyle Açık Öğretim
+                ile tamamladım.
+                Sınav döneminde ek olarak özel kurumlardan da destek aldım. Hayatımın en yorucu zamanıydı diyebilirim.
+                Eğitim hayatım süresince yaz dönemlerinde kendi bahçe işlerimize yardım ettim.
+                Şuanda Sakarya Üniversitesi’nde bilgisayar mühendisliği bölümündeyim.</p>
+        </div>
+    </section>
+    <!-- Hakkımızda Bitiş-->
+    <br>
+    <p>
+        <Marquee>~~Ayşe Aktaş~~@Copyright </Marquee>
+    </p>
+    <br>
+
+     <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
 </body>
 
 </html>
