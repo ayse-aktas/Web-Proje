@@ -1,0 +1,44 @@
+.edu {
+    margin-left: 45%;
+    margin-right: 45%;
+    background-color: white;
+    width: 10%;
+}
+
+.edu_header_figure {
+    float: right;
+    width: 21%;
+}
+
+.edu_main {
+    clear: both;
+    width: 80%
+}
+
+.edu_nav {
+    width: 75%;
+    float: left;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.edu_article {
+    margin-left: 25px;
+}
+
+.edu_footer {
+    text-align: center;
+}
+
+.sola-kaydir {
+    float: left;
+}
+
+.sertifika {
+    text-decoration: none;
+    color: #3e587b;
+}
+
+h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
