@@ -42,3 +42,10 @@
 h3 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+p i{
+    color:rgb(171, 100, 237);
+}
+
+.edu_nav h3 i{
+    color:darkgoldenrod;
+}
