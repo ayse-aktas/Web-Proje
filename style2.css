@@ -49,3 +49,37 @@ p i{
 .edu_nav h3 i{
     color:darkgoldenrod;
 }
+
+.figure :hover {
+    opacity: 0.8;
+}
+
+.catalh_foto {
+    width: 80%;
+    position: relative;
+    margin: auto;
+}
+
+.kultur {
+    width: 80%;
+    position: relative;
+    margin: auto;
+}
+
+.catalh_tarihce {
+    width: 80%;
+    position: relative;
+    margin: auto;
+}
+
+.catalh_harita {
+    width: 600px;
+    height: 450px;
+    position: relative;
+    margin: auto;
+}
+.mirasimiz_baslik {
+    padding-top: 5px;
+    width: 100%;
+    text-align: center;
+}
