@@ -129,3 +129,11 @@ p i{
     background-color: rgb(255, 255, 255);
     padding-left: 1%;
 }
+
+.giris {
+    margin-left: 45%;
+    margin-right: 40%;
+    max-width: 180px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 1%;
+}
