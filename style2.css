@@ -125,15 +125,26 @@ p i{
 .buton {
     margin-left: 45%;
     margin-right: 40%;
-    max-width: 180px;
-    background-color: rgb(255, 255, 255);
     padding-left: 1%;
 }
 
 .giris {
-    margin-left: 45%;
-    margin-right: 40%;
-    max-width: 180px;
-    background-color: rgb(255, 255, 255);
+    padding-top:40px;
+    margin-left: 30%;
+    margin-right: 35%;
     padding-left: 1%;
+}
+
+.cerceve {
+    margin-left:35%;
+    margin-right: 35%;
+    width: 40%;
+    min-height: 50vh;
+    display: block;
+    justify-content: top;
+    align-items: center;
+    background-color: rgb(89, 94, 95);
+    border:3px solid rgb(141, 148, 148);
+    margin-top:50px; 
+    margin-bottom: 50px;
 }

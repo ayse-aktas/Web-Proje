@@ -26,7 +26,7 @@ if(!($_POST['mail']==""))
     }
 }else
 {
-    echo "değerleri doldurun";
+    echo "E-posta ve şifre alanını doldurunuz.";
 }
 
 ?>
