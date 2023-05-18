@@ -7,4 +7,4 @@
 <h5><i>-Mirasımız</i> </h5>
 <h5><i>-İletişim </i></h5>
 <h5><i>-İlgi Alanlarım </i></h5>
-<h4>sayfaları bulunacaktır. </h4>
+<h4>sayfaları bulunacaktır. </h4> 

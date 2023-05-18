@@ -32,4 +32,4 @@ else
 echo "<p> <a href='Hakkinda.html'>&lt;ANA SAYFA&gt;</a></p> ";
 echo "<p> <a href='iletisim.html'>&lt;GERİ DÖN&gt;</a></p> ";
 
-?>
+?> 

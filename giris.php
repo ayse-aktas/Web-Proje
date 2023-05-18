@@ -29,4 +29,4 @@ if(!($_POST['mail']==""))
     echo "E-posta ve şifre alanını doldurunuz.";
 }
 
-?>
+?> 

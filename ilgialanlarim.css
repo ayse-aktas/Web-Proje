@@ -16,7 +16,7 @@
 .film{
     display: block;
     border:3px solid rgb(137, 253, 218);
-    background-color: rgb(159, 191, 197);
+    background-color: #8ab9c2;
     text-align: center;
 }
 
@@ -33,3 +33,4 @@
     margin-right: auto;
     width: 40%;
 }
+
