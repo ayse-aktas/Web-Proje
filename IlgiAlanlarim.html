@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -73,52 +73,97 @@
     <!--     Kayan Resimler Bitiş   -->
 
     <nav class="edu_nav">
-        <h3><i># ANİMASYON FİLMLERİ #</i></h3>
+        <div>
+            <br><br>
+            <h3 class="baslik"><i> ANİMASYON FİLMLERİ </i></h3>
+            <br>
+
+            <p class="text-center">Animasyon filmleri her zaman içinde güzel bilgiler saklayan bir kaynak olmuştur benim için.<br>
+                Beğendiğim üç adet animasyon filmi hakkındaki yorumlarım ;
+            </p>
+            <br>
+            <h5 name="RobotBon" class="RobotBon film">
+                <p><i>Robot Bon</i></p>
+                <p>Filmde insanların robot arkadaşları oluyor ve onlara aşırı bağlanıyorlar.<br>
+                    Sonradan,bozulmuş bir robotu olan çocuğun maceralarını anlatıyor.<br>
+                    Bu filmdeki robotlar şuanda da aslında bizim kullanmış olduğumuz <br>telefonlar gibi bizim
+                    hayatlarımızı, arkadaşlık ilişkilerimizi oldukça etkiliyor.<br>
+                </p>
+            </h5>
+            <br><br>
+            <h5 name="AilemRobotlaraKarsi" class="AilemRobotlaraKarsi film">
+                <p><i>Ailem Robotlara Karşı</i></p>
+                <p>Bu film bir aileyi ve bir telefondaki sistem tarafından kontrol edilen robotları anlatıyor.<br>
+                    Filmde başkaları gibi olmak isteyen bir anne, yaratıcı bir kızları, dinazorları çok seven <br>
+                    küçük erkek çocuk ve önceden kurduğu hayalleri gerçekleşmediği için kızının da kendisi gibi
+                    olmamasını isteyen bir ailemiz var.<br>
+                    Sonunda gerçek ve güzel bir aile olduklarını ve yaratıcı fikirlerin işe yarayabileceğini
+                    anlıyoruz.
+                </p>
+            </h5>
+            <br><br>
+            <h5 name="InanilmazAile" class="InanilmazAile film">
+                <p><i>İnanılmaz Aile</i></p>
+                <p>Filmde aile bireylerinin süper güçleri var.Bu güçler bazen onlar için faydalıyken bazen zararlı
+                    olabiliyor.<br>
+                    Ailedeki bireyler insanları korumaya kendilerini adıyorlar.<br>
+                    Aile ile izlenebilecek zevkli enerjik bir film.
+                </p>
+            </h5>
+        </div>
         <br>
-        <p>Animasyon filmleri her zaman içinde güzel bilgiler saklayan bir kaynak olmuştur benim için.<br>
-           Beğendiğim üç adet animasyon filmi hakkındaki yorumlarım ;
-        </p>
-
-        <h5 name="RobotBon">
-            <p><i>Robot Bon</i></p>
-            <p>Filmde insanların robot arkadaşları oluyor ve onlara aşırı bağlanıyorlar.<br>
-                Sonradan,bozulmuş bir robotu olan çocuğun maceralarını anlatıyor.<br>
-                Bu filmdeki robotlar şuanda da aslında bizim kullanmış olduğumuz <br>telefonlar gibi bizim
-                hayatlarımızı, arkadaşlık ilişkilerimizi oldukça etkiliyor.<br>
-            </p>
-        </h5>
-        <br><br>
-        <h5 name="AilemRobotlaraKarsi">
-            <p><i>Ailem Robotlara Karşı</i></p>
-            <p>Bu film bir aileyi ve bir telefondaki sistem tarafından kontrol edilen robotları anlatıyor.<br>
-                Filmde başkaları gibi olmak isteyen bir anne, yaratıcı bir kızları, dinazorları çok seven <br>
-                küçük erkek çocuk ve önceden kurduğu hayalleri gerçekleşmediği için kızının da kendisi gibi
-                olmamasını isteyen bir ailemiz var.<br>
-                Sonunda gerçek ve güzel bir aile olduklarını ve yaratıcı fikirlerin işe yarayabileceğini
-                anlıyoruz.
-            </p>
-        </h5>
-        <br><br>
-        <h5 name="InanilmazAile">
-            <p><i>İnanılmaz Aile</i></p>
-            <p>Filmde aile bireylerinin süper güçleri var.Bu güçler bazen onlar için faydalıyken bazen zararlı
-                olabiliyor.<br>
-                Ailedeki bireyler insanları korumaya kendilerini adıyorlar.<br>
-                Aile ile izlenebilecek zevkli enerjik bir film.
-            </p>
-        </h5>
-        <h3><p>Türk Animasyon Tarihi Hakkında :</p> <br></h3>
-
+        <hr>
+        <div id="movie-details" class="api">
+            <br>
+            <img id="movie-poster" src="" alt="Film Poster" class="film">
+            <h3 id="movie-title"></h3>
+            <br>
+        </div>
+        <div>
+            <button id="show-movie-btn" class="buton2">Animasyon Filmi Göster</button>
+        </div>
     </nav>
+   
+    <script>
+        const apiKey = 'f4beed1315f02e39e7445838906b04a4';
 
-    <br> 
-    <div style="text-align:center;">
-        <iframe src="https://tr.wikipedia.org/wiki/T%C3%BCrk_animasyon_tarihi" width="100%" height="600"></iframe>
-    </div>
+        const showMovieButton = document.getElementById('show-movie-btn');
+        const movieTitleElement = document.getElementById('movie-title');
+        const moviePosterElement = document.getElementById('movie-poster');
 
+        // TMDb API'den rastgele bir animasyon filmi getirme işlemini gerçekleştirir
+        function showRandomMovie() 
+        {
+            const apiUrl = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres=16`; // Sadece animasyon filmleri
 
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    const movies = data.results;
+                    // Rastgele bir film seç
+                    const randomIndex = Math.floor(Math.random() * movies.length);
+                    const movie = movies[randomIndex];
+                    const title = movie.title;
+                    const posterPath = movie.poster_path;
+                    const posterUrl = `https://image.tmdb.org/t/p/w500${posterPath}`;
 
+                    // Seçilen filmi göster
+                    movieTitleElement.textContent = title;
+                    moviePosterElement.src = posterUrl;
+                })
+                .catch(error => {
+                    console.error('Hata:', error);
+                });
+        }
 
+        // Rastgele film göster butonuna tıklandığında işlemi gerçekleştirir
+        showMovieButton.addEventListener('click', showRandomMovie);
+        
+        // İlk filmi almak için sayfa yüklendiğinde çalıştırın
+        showRandomMovie()
+    </script>
+
+    <br>
     <br>
     <br>
     <p>
