@@ -31,6 +31,12 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 40%; 
 }
 
+.poster{
+    display: block;
+    border:3px solid rgb(137, 253, 218);
+    background-color: #8ab9c2;
+    width: 200px;
+}
