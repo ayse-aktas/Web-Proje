@@ -38,5 +38,6 @@
     display: block;
     border:3px solid rgb(137, 253, 218);
     background-color: #8ab9c2;
+    text-align: center;
     width: 200px;
 }
